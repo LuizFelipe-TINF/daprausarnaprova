@@ -10,7 +10,7 @@ class Database {
         if (self::$conn === null) {
             try {
                 self::$conn = new PDO(
-                    "mysql:host=localhost;port=3307;dbname=curso_db;charset=utf8",
+                    "mysql:host=localhost;dbname=curso_db;charset=utf8",
                     self::$username,
                     self::$password,
                     [
